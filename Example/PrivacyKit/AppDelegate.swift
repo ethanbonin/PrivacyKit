@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /** Configure PrivacyKit Globally */
         PrivacyKit.shared.config("https://github.com/ithazfire/PrivacyKit",
                                  "https://github.com/ithazfire/PrivacyKit/wiki")
+        PrivacyKit.shared.setStyle(CustomPrivacyKitStyle())
 
         /** Use Custom Style (Colors & Fonts) **/
 //        PrivacyKit.shared.setStyle(CustomPrivacyKitStyle())
