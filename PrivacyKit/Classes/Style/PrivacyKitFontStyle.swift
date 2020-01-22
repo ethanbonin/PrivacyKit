@@ -110,15 +110,65 @@ public struct PrivacyKitFontStyle {
         var ultra_light: String? = "AvenirNextCondensed-UltraLight"
         var italic: String? = "AvenirNextCondensed-Italic"
     }
+    
+    
+    /**
+     Baskerville  Font
+        only 1 minor change. semibold italic is unique to only baskerville, so I categorized it under italic_medium
+     - i talic_medium = "Baskerville-SemiBoldItalic"
+     */
+    public struct baskerville: PrivacyKitFontType {
+        var regular: String = "Baskerville"
+        var bold: String? = "Baskerville-Bold"
+        var semibold: String? = "Baskerville-SemiBold"
+        var italic: String? = "Baskerville-Italic"
+        var italic_bold: String? = "Baskerville-BoldItalic"
+        var italic_medium: String? = "Baskerville-SemiBoldItalic"
+    }
+    
+    /**
+     Bodoni 72 Font
+     */
+    public struct bondoni_72: PrivacyKitFontType {
+        var regular: String = "BodoniSvtyTwoITCTT-Book"
+        var italic_regular: String? = "BodoniSvtyTwoITCTT-BookIta"
+        var bold: String? = "BodoniSvtyTwoITCTT-Bold"
+    }
 
+    /**
+     Bodoni 72 Old Style Font
+     */
+    public struct bondoni_72_oldstyle: PrivacyKitFontType {
+        var regular: String = "BodoniSvtyTwoOSITCTT-Book"
+        var italic_regular: String? = "BodoniSvtyTwoOSITCTT-BookIt"
+        var bold: String? = "BodoniSvtyTwoOSITCTT-Bold"
+    }
     
+    /**
+     Bodoni 72 Small Caps Font
+        - Note: There are no other fonts beside regular for Bodoni 72 Small Caps
+     */
+    public struct bondoni_72_smallcaps: PrivacyKitFontType {
+        var regular: String = "BodoniSvtyTwoSCITCTT-Book"
+    }
     
-//    Family: Baskerville Font names: ["Baskerville-SemiBoldItalic", "Baskerville-SemiBold", "Baskerville-BoldItalic", "Baskerville", "Baskerville-Bold", "Baskerville-Italic"]
-//    Family: Bodoni 72 Font names: ["BodoniSvtyTwoITCTT-Bold", "BodoniSvtyTwoITCTT-BookIta", "BodoniSvtyTwoITCTT-Book"]
-//    Family: Bodoni 72 Oldstyle Font names: ["BodoniSvtyTwoOSITCTT-BookIt", "BodoniSvtyTwoOSITCTT-Book", "BodoniSvtyTwoOSITCTT-Bold"]
-//    Family: Bodoni 72 Smallcaps Font names: ["BodoniSvtyTwoSCITCTT-Book"]
-//    Family: Bodoni Ornaments Font names: ["BodoniOrnamentsITCTT"]
-//    Family: Bradley Hand Font names: ["BradleyHandITCTT-Bold"]
+    /**
+     Bodoni OrnamentsFont
+        - Note: There are no other fonts beside regular for Bodoni Ornaments
+     */
+    public struct bondoni_Ornaments: PrivacyKitFontType {
+        var regular: String = "BodoniOrnamentsITCTT"
+    }
+   
+    /**
+     Bradley Hand Font
+       - Note: There are no other fonts beside regular for Bradley Hand Font
+     Also to note: regular font type is BradleyHandITCTT-Bold. Which means it's bold. FOR all the fonts.
+    */
+    public struct bradley_hand: PrivacyKitFontType {
+        var regular: String = "BradleyHandITCTT-Bold"
+    }
+    
     
 //    Family: Chalkboard SE Font names: ["ChalkboardSE-Bold", "ChalkboardSE-Light", "ChalkboardSE-Regular"]
 //    Family: Chalkduster Font names: ["Chalkduster"]
